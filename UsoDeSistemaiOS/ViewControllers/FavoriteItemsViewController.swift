@@ -36,7 +36,7 @@ class FavoriteItemsViewController: UIViewController {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "FavoriteItemViewController"{
             let favoriteItemViewController = segue.destination as! FavoriteItemViewController
-            favoriteItemViewController.favoriteItemSelected = sender as! Items
+            favoriteItemViewController.favoriteItemSelected = sender as? Items
         }
     }
     
