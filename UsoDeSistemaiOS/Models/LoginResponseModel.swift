@@ -9,7 +9,7 @@
 import Foundation
 
 class LoginResponseModel: Codable {
-    var success: Int
-    var message: String
-    var data: DataLoginModel
+    var success: Int?
+    var message: String?
+    var data: DataLoginModel?
 }

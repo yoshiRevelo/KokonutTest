@@ -45,7 +45,7 @@ class UserProfileViewController: UIViewController {
     //MARK: - private methods
     private func getUserProfile(){
         
-        guard let userData = dataLogin.data.access_token else{return}
+        guard let userData = dataLogin.data!.access_token else{return}
             
         let headers = [
             "lang" : "es_mx",
