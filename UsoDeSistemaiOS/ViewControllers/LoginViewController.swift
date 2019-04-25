@@ -87,17 +87,17 @@ class LoginViewController: UIViewController {
                                 self.performSegue(withIdentifier: "ItemsViewController", sender: self.loginData)
                             }else{
                                 print("Error de sesión")
-                                let alertController = UIAlertController(title: "Error de sesión", message: "Verifica que tus datos sean correctos.", preferredStyle: .alert)
-                                
-                                let okAction = UIAlertAction(title: "Ok", style: .default, handler: nil)
-                                
-                                alertController.addAction(okAction)
-                                
-                                self.present(alertController, animated: true, completion:  nil)
                             }
                             
                         }catch let error{
                             print("LoginResponseModel error \(error.localizedDescription)")
+                            let alertController = UIAlertController(title: "Ha ocurrido un error", message: "Verifica que tus datos sean correctos o intentalo más tarde Gracias.", preferredStyle: .alert)
+                            
+                            let okAction = UIAlertAction(title: "Ok", style: .default, handler: nil)
+                            
+                            alertController.addAction(okAction)
+                            
+                            self.present(alertController, animated: true, completion:  nil)
                         }
                     case .failure(let error):
                         print("Response error \(error.localizedDescription)")

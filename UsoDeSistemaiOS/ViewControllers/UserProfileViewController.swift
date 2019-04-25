@@ -78,13 +78,7 @@ class UserProfileViewController: UIViewController {
                             
                         }else{
                             print("Error al obtener el userProfile")
-                            /*let alertController = UIAlertController(title: "Error de sesión", message: "Verifica que tus datos sean correctos.", preferredStyle: .alert)
-                            
-                            let okAction = UIAlertAction(title: "Ok", style: .default, handler: nil)
-                            
-                            alertController.addAction(okAction)
-                            
-                            self.present(alertController, animated: true, completion:  nil)*/
+
                         }
                         
                         
