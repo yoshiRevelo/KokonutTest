@@ -1,0 +1,6 @@
+framework module Pods_UsoDeSistemaiOS {
+  umbrella header "Pods-UsoDeSistemaiOS-umbrella.h"
+
+  export *
+  module * { export * }
+}
