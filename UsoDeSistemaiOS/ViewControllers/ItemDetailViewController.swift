@@ -29,8 +29,9 @@ class ItemDetailViewController: UIViewController {
         let savedItem = CoreDataManager.sharedInstance.readData(class: Items.self)
         
         for favoriteItem in savedItem{
-            if favoriteItem.title == itemDetail.title && favoriteItem.favorite == true{
+            if favoriteItem.title == itemDetail.title && favoriteItem.favorite{
                 saveButton.isHidden = true
+                return
             }else{
                 saveButton.isHidden = false
             }
