@@ -64,33 +64,15 @@
                                     <action selector="loginButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="3LC-DC-4KW"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MS5-2y-Son">
-                                <rect key="frame" x="102" y="531" width="210" height="29"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <state key="normal" title="¿Olvidaste tu contraseña?">
-                                    <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </state>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GTW-fa-rpZ">
-                                <rect key="frame" x="8" y="531" width="86" height="29"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <state key="normal" title="Crear Cuenta">
-                                    <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </state>
-                            </button>
                         </subviews>
                         <color key="backgroundColor" cocoaTouchSystemColor="lightTextColor"/>
                         <constraints>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="MS5-2y-Son" secondAttribute="trailing" constant="8" id="0iv-1L-ypJ"/>
-                            <constraint firstItem="GTW-fa-rpZ" firstAttribute="centerY" secondItem="MS5-2y-Son" secondAttribute="centerY" id="2RO-3u-0b5"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="CNy-G4-fow" secondAttribute="trailing" constant="8" id="7RJ-8f-UgM"/>
-                            <constraint firstItem="GTW-fa-rpZ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="8" id="8dp-Qr-CKl"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="LPD-pC-9jp" secondAttribute="trailing" constant="8" id="9pm-ht-Ewa"/>
                             <constraint firstItem="LPD-pC-9jp" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="8" id="CK8-G3-b5p"/>
                             <constraint firstItem="7P4-Ld-N8o" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="Fv5-6K-ziD"/>
                             <constraint firstItem="CNy-G4-fow" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="8" id="GCU-NS-JfT"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="yte-jW-qlF" secondAttribute="trailing" constant="8" id="Lcp-rM-Odx"/>
-                            <constraint firstItem="MS5-2y-Son" firstAttribute="leading" secondItem="GTW-fa-rpZ" secondAttribute="trailing" constant="8" id="Mmc-CD-9FN"/>
                             <constraint firstItem="CNy-G4-fow" firstAttribute="top" secondItem="p6H-WQ-x2J" secondAttribute="bottom" constant="16" id="Ohu-Pn-9tt"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="p6H-WQ-x2J" secondAttribute="trailing" constant="8" id="Z2q-wR-5nY"/>
                             <constraint firstItem="LPD-pC-9jp" firstAttribute="top" secondItem="CNy-G4-fow" secondAttribute="bottom" constant="16" id="bAc-zR-xpf"/>
@@ -98,8 +80,6 @@
                             <constraint firstItem="yte-jW-qlF" firstAttribute="top" secondItem="LPD-pC-9jp" secondAttribute="bottom" constant="16" id="jmt-HR-DH1"/>
                             <constraint firstItem="p6H-WQ-x2J" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="8" id="mEj-cL-gVD"/>
                             <constraint firstItem="p6H-WQ-x2J" firstAttribute="top" secondItem="7P4-Ld-N8o" secondAttribute="bottom" constant="50" id="moQ-rV-ksq"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="MS5-2y-Son" secondAttribute="bottom" constant="8" id="oFL-m1-UQ8"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="GTW-fa-rpZ" secondAttribute="bottom" constant="8" id="qaU-kH-25T"/>
                             <constraint firstItem="yte-jW-qlF" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="8" id="rDf-TS-R28"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
