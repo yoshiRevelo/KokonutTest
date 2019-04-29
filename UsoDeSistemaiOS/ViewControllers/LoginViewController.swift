@@ -55,6 +55,11 @@ class LoginViewController: UIViewController {
         login()
     }
     
+    @IBAction func showPasswordButtonPresse(_ sender: Any) {
+        passwordTextField.isSecureTextEntry.toggle()
+    }
+    
+    
     //MARK: - Private methods
     private func login(){
         if emailTextField.text == "" || passwordTextField.text == ""{
@@ -109,6 +114,20 @@ class LoginViewController: UIViewController {
 
 extension LoginViewController: UITextFieldDelegate{
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        
+        if let nextTextField =  view.viewWithTag(textField.tag + 1) as? UITextField
+        {
+            nextTextField.becomeFirstResponder()
+        }
+        else
+        {
+            textField.resignFirstResponder()
+            login()
+        }
+        return true
+        
+        /*
+        
         switch textField {
         case emailTextField:
             passwordTextField.becomeFirstResponder()
@@ -119,7 +138,7 @@ extension LoginViewController: UITextFieldDelegate{
             break
         }
         
-        return true
+        return true*/
     }
     
     func textFieldDidBeginEditing(_ textField: UITextField) {

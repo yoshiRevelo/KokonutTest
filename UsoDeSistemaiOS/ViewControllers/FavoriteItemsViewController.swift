@@ -35,7 +35,7 @@ class FavoriteItemsViewController: UIViewController {
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "FavoriteItemViewController"{
-            let favoriteItemViewController = segue.destination as! FavoriteItemViewController
+            let favoriteItemViewController = segue.destination as! ItemDetailViewController
             favoriteItemViewController.favoriteItemSelected = sender as? Items
         }
     }
